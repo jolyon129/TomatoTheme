@@ -1,0 +1,18 @@
+{
+    "freeze": true,
+    "browserify": true,
+    "laxbreak": true,
+    "noempty": true,
+    "noarg": true,
+    "esnext": true,
+    "eqeqeq": true,
+    "browser": true,
+    "bitwise": true,
+    "debug": true,
+    "curly": true,
+    "undef": true,
+    "globalstrict": true,
+    "nonew": true,
+    "forin": true,
+    "asi": true,
+}

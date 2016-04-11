@@ -1,12 +1,22 @@
 {
-  "name": "hexo-theme-landscape",
+  "name": "hexo-mytheme",
   "version": "0.0.1",
-  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolyon129/hexo-theme.git"
+  },
+  "author": "‘Jolyon’ <jolyon129@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jolyon129/hexo-theme/issues"
+  },
+  "homepage": "https://github.com/jolyon129/hexo-theme#readme",
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "load-grunt-tasks": "~0.2.0",
-    "grunt-git": "~0.2.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1"
-  }
+    "gulp": "~3.9.1",
+    "gulp-uglify": "~1.5.3"
+  },
+  "dependencies": {}
 }
