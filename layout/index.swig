@@ -1,1 +1,2 @@
-{% extends '_layout.swig' %}
+<!-- {% extends '_layout.swig' %} -->
+test

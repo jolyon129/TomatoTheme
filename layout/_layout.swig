@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Test</title>
+  <!-- {% include '_partial/head.swig' %} -->
 </head>
 <body>
-  {% include '_navbar.swig' %}
+  <!-- {% include '_partial/navbar.swig' %} -->
 </body>
 </html>
