@@ -10,12 +10,16 @@ var exec = require('child_process').exec;
 
 gulp.task('watch', function() {
     gulp.watch('layout/*.swig', function() {
-        console.log('I HEAR YOU');
+        console.log('I HEARED YOU');
     });
 });
 
 gulp.task('hexo', function() {
     exec('cd ../../ && hexo s');
+});
+
+gulp.task('copy',function() {
+
 });
 
 
