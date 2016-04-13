@@ -1,0 +1,26 @@
+.tab-nav
+  ul
+    clearfix()
+    border-bottom 1px solid $line-color
+    li
+      float left
+      margin-left 30px
+      font-size $font-size-large
+    & :nth-child(1)
+      margin-left 0px
+
+li.active
+  border-bottom 2px solid #000
+
+
+
+
+@media $mq-mobile
+  .tab-nav
+    ul
+      clearfix()
+      text-align center
+      li
+        margin-left 50px
+      & :nth-child(1)
+        margin-left 0px
