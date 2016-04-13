@@ -10,6 +10,7 @@
 
 {% block content %}
 <div class="index-content">
+    <span></span>
     <ul class="post-lists">
         {% for post in page.posts %}
         <li>

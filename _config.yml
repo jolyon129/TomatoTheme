@@ -1,10 +1,8 @@
-#menu:
-#  home: /
-#  categories: /categories
-#  about: /about
-#  archives: /archives
-#  tags: /tags
-#rss: /atom.xml
+menu:
+ archives: true
+ tags: true
+ categories: true
+rss: /atom.xml
 
 # Content
 #excerpt_link: Read More
@@ -36,3 +34,6 @@
 #google_plus:
 #fb_admins:
 #fb_app_id:
+
+category_generator:
+  per_page: 40
