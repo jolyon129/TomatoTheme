@@ -1,11 +1,13 @@
 // nib
-global-reset();
+normalize-css();
+
 
 html
   background-color $body-bg-color
+  font-size 62.5% /* base font-size: 10px */
 body
   font-family $font-family-base
-  font-size $font-size-base
+  font-size $font-size-large
   color $text-color
   background-color transparent
   -webkit-font-smoothing antialiased
@@ -22,4 +24,6 @@ a:hover, a:focus
   color $link-hover-color
   text-decoration none
 
-
+ol, ul
+  list-style: none
+  reset-box-model()

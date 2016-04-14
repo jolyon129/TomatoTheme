@@ -8,9 +8,7 @@
 <div class="container">
     <div class="sidebar">
     </div>
-    <div class="headbar">
-        <div class="headbar-menu"><a href="">Me</a></div>
-    </div>
+    {% include '_partial/mb-headbar.swig' %}
     <div class="main-container">
         <div class="aside"></div>
         <div class="main-wrapper">
@@ -21,6 +19,9 @@
         </div>
     </div>
 </div>
+<script>
+
+</script>
 {% block script%}{% endblock %}
 </body>
 </html>

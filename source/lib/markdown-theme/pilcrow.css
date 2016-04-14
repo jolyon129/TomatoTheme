@@ -1,0 +1,42 @@
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  position: relative;
+}
+
+.article h1:hover .headerlink:before,
+.article h2:hover .headerlink:before,
+.article h3:hover .headerlink:before,
+.article h4:hover .headerlink:before,
+.article h5:hover .headerlink:before,
+.article h6:hover .headerlink:before {
+    content: "\00B6";/* pilcrow */
+    color: #888;
+    font-size: smaller;
+}
+
+.article .headerlink {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  position: absolute;
+  top: 0;
+  left: -0.7em;
+  display: block;
+  padding-right: 1em;
+}
+
+.article h1:hover .headerlink,
+.article h2:hover .headerlink,
+.article h3:hover .headerlink,
+.article h4:hover .headerlink,
+.article h5:hover .headerlink,
+.article h6:hover .headerlink {
+  display: inline-block;
+  text-decoration: none;
+}

@@ -15,8 +15,8 @@
         {% for post in page.posts %}
         <li>
             <div class="lists-item">
-                <p class="post-date">{{ moment(post.date, "YYYYMMDD", 'zh-cn').fromNow() }}</p>
-                <h4><a href="">{{ post.title }}</a></h4>
+                <span class="post-date">{{ moment(post.date, "YYYYMMDD", 'zh-cn').fromNow() }}</span>
+                <div class="title"><a href="{{ url_for(post.path) }}">{{ post.title }}</a></div>
                 <div class="item-footer">
                     <span>分类于: </span>
                     {% for cat in post.categories %}
