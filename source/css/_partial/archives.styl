@@ -1,0 +1,29 @@
+.archives
+  padding 0 10px
+  border-left 4px solid #EFEFEF
+  li
+    &:before
+      content " "
+      display inline-block
+      box-sizing border-box
+      position: relative
+      left 0
+      width 6px
+      height 6px
+      margin-left -15px
+      background #EFAFAF
+      border-radius 50%
+      border 1px solid #EFAFAF
+      transition-duration 0.1s
+      transition-timing-function ease-in-out
+      transition-delay 0s
+    text-decoration none
+    .lists-item
+      display inline-block
+      margin-left 10px
+  li:hover:before
+    background $orange
+    border 1px solid $orange
+
+  .post-date
+    font-size $font-size-base

@@ -2,7 +2,42 @@
   box-sizing border-box
   height 45px
   position fixed
-  padding-top 10px
-  padding-bottom 7px
   box-shadow 0 1px 3px #E3E3E3
   width 100%
+  background-color $header-bg-color
+  z-index $zindex-4
+  padding 4px
+  clearfix()
+  .left-btn-group
+    box-sizing border-box
+    float left
+    font-size $font-size-large
+    vertical-align middle
+    margin-left 50px
+  .right-btn-group
+    box-sizing border-box
+    float right
+    font-size $font-size-larger
+    vertical-align middle
+    clearfix()
+    a.btn
+      color #F5816C
+      padding 0 10px
+      & :hover
+        color $orange
+  .avatar
+    float right
+    margin 0 20px
+    width: 35px;
+    height: 35px;
+    border: 2px solid rebeccapurple;
+    padding 0
+    border-radius: 50%;
+    box-sizing: border-box;
+
+.header
+  transition: transform 0.4s cubic-bezier(0.56, -0.29, 0.57, 1),opacity 0.3s;
+
+.header.hide
+  transform: translate(0, -90px);
+  opacity: 0.8;

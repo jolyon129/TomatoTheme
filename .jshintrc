@@ -16,7 +16,8 @@
     "$",
     "jQuery",
     "NexT",
-    "CONFIG"
+    "CONFIG",
+    "console"
   ],
   "quotmark": true,
   "trailing": true,

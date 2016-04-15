@@ -11,12 +11,12 @@
         <li class="active"><a href="/tags">标签</a></li>
         <li><a href="/categories">分类</a></li>
         <li><a href="/archives">归档</a></li>
-        {% elseif item == "cat" %}
+        {% elseif item == "cats" %}
         <li><a href="/">最新</a></li>
         <li><a href="/tags">标签</a></li>
         <li class="active"><a href="/categories">分类</a></li>
         <li><a href="/archives">归档</a></li>
-        {% elseif item == "archive" %}
+        {% elseif item == "archives" %}
         <li><a href="/">最新</a></li>
         <li><a href="/tags">标签</a></li>
         <li><a href="/categories">分类</a></li>

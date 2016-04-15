@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/jolyon129/hexo-theme#readme",
   "devDependencies": {
+    "babel": "~6.5.2",
     "browserify": "^6.3.4",
     "browserify-shim": "~3.8.12",
     "gulp-browserify": "~0.5.1",

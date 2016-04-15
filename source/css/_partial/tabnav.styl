@@ -12,7 +12,15 @@
 li.active
   border-bottom 2px solid #000
 
-
+.tab-nav
+  background-color $whitesmoke
+  position fixed
+  width 65%
+  box-sizing border-box
+  padding 15px 70px 0px 70px
+  opacity 1
+  z-index $zindex-5
+  background-color $whitesmoke
 
 @media $mq-mobile
   .tab-nav
@@ -20,6 +28,10 @@ li.active
       clearfix()
       text-align center
       li
-        margin-left 50px
+        margin-left 30px
       & :nth-child(1)
-        margin-left 0px
+        margin-left 0
+  .tab-nav
+    position relative
+    width 100%
+    padding 15px 30px 0 30px

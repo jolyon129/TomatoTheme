@@ -40,3 +40,9 @@ pagination_dir: page
 
 category_generator:
   per_page: 40
+
+archive_generator:
+  per_page: 40
+  yearly: true
+  monthly: false
+  daily: false
