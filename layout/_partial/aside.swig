@@ -25,7 +25,7 @@
                 </i>
                 <i class="iconfont icon-love"></i><i>Jolyon</i>
             </div>
-            <div class="source-info"><i>Theme <a target="_blank" href="https://github.com/jolyon129/TomatoTheme">Tomato</a> authored by <a target="_blank" href="https://github.com/jolyon129">Jolyon</a> </i></div>
+            <div class="source-info"><i>Theme <a target="_blank" href="https://github.com/jolyon129/TomatoTheme">Tomato</a> created by <a target="_blank" href="https://github.com/jolyon129">Jolyon</a> </i></div>
         </div>
     </div>
 </div>
