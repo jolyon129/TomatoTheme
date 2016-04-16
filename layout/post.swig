@@ -12,6 +12,18 @@
     {% include '_partial/mb-headbar.swig' %}
     {% include '_partial/header.swig' %}
     <div class="post-container">
+        <div class="post-toc">
+            {% if page.toc_number === undefine %}
+            {% set toc = toc(page.content, { "class": "nav", list_number: "true" }) %}
+            {% else %}
+            {% set toc = toc(page.content, {"class": "nav", list_number: "tue"}) %}
+            {% endif %}
+            {% if toc.length <= 1 %}
+            <p class="post-toc-empty">{{ __('post.toc_empty') }}</p>
+            {% else %}
+            <div class="post-toc-content">{{ toc }}</div>
+            {% endif %}
+        </div>
         <div class="wrapper">
             <div class="article">
                 <div class="article-header">
@@ -27,6 +39,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <script src="{{ url_for('/js/build/post_entry.min.js') }}"></script>

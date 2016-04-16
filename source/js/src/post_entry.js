@@ -2,7 +2,8 @@
 
 window.$ = require('jquery');
 var hljs = require ('highlight');
-var HeaderMove = require('./core.js');
+var HeaderMove = require('./headerMove.js');
+var Toc = require("./toc.js")
 
 $(document).ready( function(){
     $('pre').each(function(i, block) {

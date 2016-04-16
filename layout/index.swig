@@ -34,18 +34,11 @@
         {% endfor %}
     </ul>
     <div class="more-article">
-        <a href="/archives"><span>更多 </span><i class="fa fa-angle-right"></i></a>
+        <a href="/archives"><span>更多 </span><i class="iconfont icon-right"></i></a>
     </div>
     {% if page.prev or page.next %}
     <nav class="pagination">
-        {{
-            paginator({
-                prev_next: true,
-                prev_text: '<i class="fa fa-angle-left"></i>',
-                next_text: '<i class="fa fa-angle-right"></i>',
-                mid_size: 1
-            })
-        }}
+
     </nav>
     {% endif %}
 </div>

@@ -20,20 +20,26 @@
     font-size $font-size-larger
     vertical-align middle
     clearfix()
+    .icon-collapsedown.on
+      color $orange
     a.btn
-      color #F5816C
+      color #CEADAD
       padding 0 10px
       & :hover
         color $orange
+      i
+        font-size $font-size-larger
   .avatar
     float right
     margin 0 20px
     width: 35px;
     height: 35px;
-    border: 2px solid rebeccapurple;
     padding 0
     border-radius: 50%;
     box-sizing: border-box;
+    border 2px solid transparent
+    &:hover
+      border 1px solid $orange
 
 .header
   transition: transform 0.4s cubic-bezier(0.56, -0.29, 0.57, 1),opacity 0.3s;

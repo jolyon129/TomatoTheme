@@ -4,7 +4,7 @@
   margin-left 40px
   position relative
   .wrapper
-    width 700px
+    max-width 700px
     margin 0 auto
     .article
       padding 80px 10px 10px 10px
@@ -14,3 +14,29 @@
         margin 40px
         span
           font-size $font-size-base
+
+.post-container
+  .post-toc
+    position fixed
+    right 1%
+    top 60px
+    padding 5px
+    box-sizing border-box
+    max-width 200px
+    font-size $font-size-base
+    border 1px solid $gainsboro
+    border-radius 5%
+    background-color $whitesmoke
+    box-shadow 0 1px 3px $gainsboro
+    z-index $zindex-5
+
+.post-toc-content
+  .nav-item
+    a.nav-link
+      font-weight $font-weight-bolde
+      font-style italic
+      &:hover
+        color $orange
+        transition 0.2s
+    .nav-child
+      padding-left 5px
