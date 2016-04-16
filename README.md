@@ -1,5 +1,7 @@
-# Tomato!
+# Tomato! [![LICENSE MIT](https://img.shields.io/badge/LICENSE-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 A Beatiful, Clean, Responsive theme for hexo, which inspired by [jianshu](http://www.jianshu.com) and the color of Tomato.
+
 Issues Welcomed! 😄
 
 ## NOTICE
@@ -11,6 +13,7 @@ In the middle of 2015, I star using hexo as my blog framwork and make some pr fo
 So, I decide to redesiginer my blog and build a brand-new theme. 
 
 Take a look about the selection of development:
+
 1. Gulp as build tool.
 2. Browserify everything.
 3. Stylus as css preprocessor 
