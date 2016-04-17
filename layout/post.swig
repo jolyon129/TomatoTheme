@@ -14,9 +14,9 @@
     <div class="post-container">
         <div class="post-toc">
             {% if page.toc_number === undefine %}
-            {% set toc = toc(page.content, { "class": "nav", list_number: "true" }) %}
+            {% set toc = toc(page.content, { "class": "scroll nav", list_number: "true" }) %}
             {% else %}
-            {% set toc = toc(page.content, {"class": "nav", list_number: "tue"}) %}
+            {% set toc = toc(page.content, {"class": "scroll nav", list_number: "tue"}) %}
             {% endif %}
             {% if toc.length <= 1 %}
             <p class="post-toc-empty">{{ __('post.toc_empty') }}</p>
@@ -38,11 +38,15 @@
                     {{ page.content }}
                 </div>
             </div>
+            {% include '_partial/loadDS.swig' %}
         </div>
 
     </div>
 </div>
 <script src="{{ url_for('/js/build/post_entry.min.js') }}"></script>
 {% block script%}{% endblock %}
+<script type="text/javascript">
+
+</script>
 </body>
 </html>

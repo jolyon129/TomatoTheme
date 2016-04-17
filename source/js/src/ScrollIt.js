@@ -1,7 +1,7 @@
 "use strict";
 
 
-function HeaderMove() {
+function ScrollIt() {
 
 }
 
@@ -11,7 +11,8 @@ var cusEvents = {
 };
 
 
-HeaderMove.prototype = {
+
+ScrollIt.prototype = {
     headerOffsetY: 0,
     threshold: 40,
     tempY: 0,
@@ -23,18 +24,16 @@ HeaderMove.prototype = {
     bindEvent: function () {
         var self = this;
         var headerElement = $('.header');
+
         $(window).on('scroll', function () {
             self.windowOffsetY = window.scrollY - self.tempY;
             self.headerOffsetY = window.scrollY;
-            console.log("headerOffsetY: " + self.headerOffsetY);
             // 如果用户下滑且超过40px, 且header还没有被隐藏则触发事件
             if (self.windowOffsetY > 0 && self.headerOffsetY > 40 && !self.hasHiddenHeader) {
                 $(window).trigger(cusEvents.hideHeader);
-                console.log("Trigger "+cusEvents.hideHeader);
             }
             else if(self.windowOffsetY < 0 && self.hasHiddenHeader){
                 $(window).trigger(cusEvents.showHeader);
-                console.log("Trigger "+cusEvents.showHeader);
             }
             self.tempY = window.scrollY;
         });
@@ -51,4 +50,4 @@ HeaderMove.prototype = {
 };
 
 
-module.exports = HeaderMove;
+module.exports = ScrollIt;
