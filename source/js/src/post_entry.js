@@ -1,10 +1,10 @@
 "use strict";
 
-window.$ = require('zepto');
+window.zepto=window.$ = require('zepto');
 var hljs = require ('highlight');
 var ScrollIt = require('./scrollit.js');
 var Toc = require('./toc.js');
-require('velocity');
+require('../../lib/velocity.min.js');
 
 $(document).ready( function(){
     var scrollIt = new ScrollIt();
@@ -14,7 +14,7 @@ $(document).ready( function(){
     (function() {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.src = (document.location.protocol === 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
