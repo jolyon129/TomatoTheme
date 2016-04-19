@@ -24,7 +24,7 @@
                 <div class="item-footer">
                     <span>分类于: </span>
                     {% for cat in post.categories %}
-                    <span><a href="">{{cat.name}} |</a></span>
+                    <span><a href="/categories/{{cat.name}}/#_tabnav">{{cat.name}} |</a></span>
                     {% endfor %}
                 </div>
             </div>
@@ -34,7 +34,7 @@
         {% endfor %}
     </ul>
     <div class="more-article">
-        <a href="/archives"><span>更多 </span><i class="iconfont icon-right"></i></a>
+        <a href="/archives#_tabnav"><span>更多 </span><i class="iconfont icon-right"></i></a>
     </div>
     {% if page.prev or page.next %}
     <nav class="pagination">
@@ -47,7 +47,5 @@
 
 
 {% block script %}
-<script>
-
-</script>
+<script src="./js/build/index_entry.min.js"></script>
 {% endblock %}

@@ -31,7 +31,7 @@
                     <span>发表于{{ date(page.date, 'YYYY/MM/DD') }} |</span>
                     <span>分类于</span>
                     {% for cat in page.categories %}
-                    <span><a href="">{{cat.name}} </a>|</span>
+                    <span><a href="/categories/{{cat.name}}/#_tabnav">{{cat.name}} </a>|</span>
                     {% endfor %}
                 </div>
                 <div class="article-content">
@@ -44,9 +44,5 @@
     </div>
 </div>
 <script src="{{ url_for('/js/build/post_entry.min.js') }}"></script>
-{% block script%}{% endblock %}
-<script type="text/javascript">
-
-</script>
 </body>
 </html>

@@ -39,14 +39,17 @@ gulp.task('css', function () {
 //});
 
 gulp.task('browserify', function () {
-    gulp.src('./source/js/src/post_entry.js')
+    gulp.src(['./source/js/src/post_entry.js',
+        './source/js/src/index_entry.js'])
         .pipe(browserify({
             insertGlobals: true
         }))
         .on('error', function(err){
             console.log(err);
         })
-        .pipe(rename('post_entry.min.js'))
+        .pipe(rename({
+            suffix: '.min'
+        }))
         //.pipe(gulp.dest('./source/js/temp'))
         .pipe(gulp.dest('./source/js/build'))
         .pipe(shell(TPL_FILE_INFO));
