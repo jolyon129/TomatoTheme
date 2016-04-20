@@ -1,5 +1,5 @@
 {% macro render(item) %}
-<div id="_tabnav" class="tab-nav">
+<div  class="tab-nav">
     <ul>
         {% if item == "index" %}
         <li class="active"><a href="/#_tabnav">最新</a></li>

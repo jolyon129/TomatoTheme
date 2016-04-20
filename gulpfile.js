@@ -58,7 +58,7 @@ gulp.task('browserify', function () {
 gulp.task('watch', function () {
     console.log("Start to watch");
     gulp.watch('./source/lib/markdown-theme/*.css', ['css']);
-    gulp.watch('./source/js/src/*.js', ['browserify']);
+    gulp.watch(['./source/js/src/*.js', './source/js/src/lib/*.js'], ['browserify']);
 });
 
 gulp.task('uglify',function () {

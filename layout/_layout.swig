@@ -10,8 +10,8 @@
     </div>
     {% include '_partial/mb-headbar.swig' %}
     <div class="main-container">
-
         {% include '_partial/aside.swig' %}
+        <div id="_tabnav"></div>
         <div class="main-wrapper">
             {% block tabnav %}{% endblock %}
             <div class="tab-content">

@@ -9,6 +9,7 @@
 
 
 .mb-headbar
+  transition: transform 0.4s cubic-bezier(0.56, -0.29, 0.57, 1),opacity 0.3s;
   .home-btn
     width 40px
     margin 0 auto
@@ -18,3 +19,7 @@
     line-height 45px
     i
       font-size $font-size-larger
+
+.mb-headbar.hide
+  transform: translate(0, -90px);
+  opacity: 0.8;

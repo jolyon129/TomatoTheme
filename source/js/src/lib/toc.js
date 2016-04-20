@@ -15,14 +15,6 @@ Toc.prototype = {
         //记录值
         self.getHeaderlink();
         //pause
-
-        $('a.scroll').click(function(){
-            $( $(this).attr('href') )
-                .velocity('stop')
-                .velocity("scroll", {duration: 300, offset: self.offset});
-            return false;
-        });
-
         console.log(self.linkOffsetY);
         self.tocTrack();
     },
