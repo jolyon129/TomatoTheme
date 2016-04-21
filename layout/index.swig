@@ -47,5 +47,4 @@
 
 
 {% block script %}
-<script src="./js/build/index_entry.min.js"></script>
 {% endblock %}

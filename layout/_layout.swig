@@ -20,9 +20,7 @@
         </div>
     </div>
 </div>
-<script>
-
-</script>
+<script src="/js/build/index_entry.min.js"></script>
 {% block script%}{% endblock %}
 </body>
 </html>

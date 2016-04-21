@@ -66,3 +66,9 @@ gulp.task('uglify',function () {
        .pipe(uglify())
        .pipe(gulp.dest('./source/js/build/'));
 });
+
+gulp.task('build',function () {
+    gulp.src('./source/js/build/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./source/js/build/'));
+});

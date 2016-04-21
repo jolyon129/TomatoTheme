@@ -7,7 +7,6 @@ var Toc = require('./lib/toc.js');
 require('../../lib/velocity.min.js');
 
 $(document).ready(function () {
-    var pc_header = $('.header');
     var scrollIt = new ScrollIt(['.header', '.mb-headbar']);
     var toc = new Toc();
     // 加载多说
