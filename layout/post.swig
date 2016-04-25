@@ -47,6 +47,18 @@
         </div>
     </div>
 </div>
+<script>
+    window.duoshuoQuery = {short_name: "{{config.duoshuo_shortname}}"};
+</script>
 <script src="{{ url_for('/js/build/post_entry.min.js') }}"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?{{config.baidutj}}";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 </body>
 </html>

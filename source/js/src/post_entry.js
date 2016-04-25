@@ -10,8 +10,6 @@ $(document).ready(function () {
     var scrollIt = new ScrollIt(['.header', '.mb-headbar']);
     var toc = new Toc();
     // 加载多说
-
-    window.duoshuoQuery = {short_name: "lizhuolun"};
     (function () {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';
