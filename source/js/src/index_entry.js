@@ -7,6 +7,6 @@ require('../../lib/velocity.min.js');
 
 $(document).ready( function(){
     $('.scroll.btn').hide();
-    var scrollIt = new ScrollIt([ '.mb-headb;
+    var scrollIt = new ScrollIt('.mb-headb');
     scrollIt.init();
 });

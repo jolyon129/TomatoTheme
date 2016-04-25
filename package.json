@@ -41,5 +41,8 @@
     "transform": [
       "browserify-shim"
     ]
+  },
+  "dependencies": {
+    "hexo-generator-sitemap": "~1.1.2"
   }
 }

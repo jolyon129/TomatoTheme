@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" id="header">
     <a class="btn" href="/"><img class="avatar" src="{{ theme.avatar }}" alt=""></a>
     <div class="right-btn-group">
         <a class="btn home-btn" href="/"><i class="iconfont icon-home"></i></a>

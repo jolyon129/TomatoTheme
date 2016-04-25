@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('a.comment-btn').click(function(){
         $( $(this).attr('href') )
             .velocity('stop')
-            .velocity("scroll", {duration: 300, offset: self.offset});
+            .velocity("scroll", {duration: 300, offset: this.offset});
         return false;
     });
 
@@ -47,7 +47,12 @@ $(document).ready(function () {
             icon.removeClass('on');
         }
     });
-
+    $('a.go-top').click(function() {
+        $( $(this).attr('href') )
+            .velocity('stop')
+            .velocity("scroll", {duration: 300, offset: this.offset});
+        return false;
+    });
 });
 
 

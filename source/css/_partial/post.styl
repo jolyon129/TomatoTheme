@@ -27,7 +27,7 @@
     border 1px solid $gainsboro
     border-radius 5%
     background-color $whitesmoke
-    box-shadow 0 1px 3px $gainsboro
+    box-shadow 0 1px 3px #DADADA
     z-index $zindex-5
     opacity 1
     transition top 0.5s, opacity 0.4s
@@ -119,6 +119,27 @@ a.scroll.nav-link.on
 a.scroll.nav-link
   transition 0.1s
 
+.post-container
+  .left-fixed-btn.hide
+    display none
+  .left-fixed-btn
+    position fixed
+    right 60px
+    bottom 60px
+    box-shadow 0 1px 3px #DADADA
+    a
+      display block
+      vertical-align middle
+      width 40px
+      height 40px
+      text-align center
+      border 1px solid #eeeeee
+
+      &:hover
+        color $orange
+      i
+        line-height 40px
+
 @media $mq-mobile
   .header
     display none
@@ -130,3 +151,5 @@ a.scroll.nav-link
     .post-container
       margin-left 0
       padding 0 20px
+      .left-fixed-btn
+        right 10px

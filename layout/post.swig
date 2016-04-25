@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="container">
+    <div id="top"></div>
     <div class="sidebar">
     </div>
     {% include '_partial/mb-headbar.swig' %}
@@ -40,7 +41,10 @@
             </div>
             {% include '_partial/loadDS.swig' %}
         </div>
-
+        <div class="left-fixed-btn hide">
+            <!--<a class="qr-code"><i class="iconfont icon-qr"></i></a>-->
+            <a href="#top" class="go-top"><i class="iconfont icon-ui2-icon-arrow-up"></i></a>
+        </div>
     </div>
 </div>
 <script src="{{ url_for('/js/build/post_entry.min.js') }}"></script>

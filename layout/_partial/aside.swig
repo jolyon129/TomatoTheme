@@ -1,12 +1,12 @@
 <div class="aside">
     <div class="basic-info">
         <div class="avatar">
-            <img src="{{theme.avatar}}" alt="100">
+            <img src="{{ theme.avatar }}" alt="100">
         </div>
         <div class="intro">
             <h2>{{config.author}}</h2>
                 <span><i>
-                    {{ config.description }}
+                    "{{ theme.quote }}"
                 </i></span>
         </div>
         <div class="sns">
