@@ -18,7 +18,13 @@ $(document).ready(function () {
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
-
+    // 加载BAIDU
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?"+window.baidutj;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
     checkDs();
     $('pre').each(function (i, block) {
         hljs.highlightBlock(block);
@@ -51,6 +57,13 @@ $(document).ready(function () {
             .velocity("scroll", {duration: 300, offset: this.offset});
         return false;
     });
+
+    $('.mb-headbar a.btn').click(function() {
+        $( $(this).attr('href') )
+            .velocity('stop')
+            .velocity("scroll", {duration: 300, offset: this.offset});
+        return false;
+    })
 });
 
 

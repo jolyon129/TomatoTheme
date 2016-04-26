@@ -34,6 +34,7 @@
                     {% for cat in page.categories %}
                     <span><a href="/categories/{{cat.name}}/#_tabnav">{{cat.name}} </a>|</span>
                     {% endfor %}
+                    <span class="ds-thread-count" data-thread-key="{{ page.path }}"></span>
                 </div>
                 <div class="article-content">
                     {{ page.content }}
@@ -49,16 +50,11 @@
 </div>
 <script>
     window.duoshuoQuery = {short_name: "{{config.duoshuo_shortname}}"};
+    window.baidutj = '{{config.baidutj}}';
 </script>
 <script src="{{ url_for('/js/build/post_entry.min.js') }}"></script>
 <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?{{config.baidutj}}";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+
 </script>
 </body>
 </html>

@@ -20,6 +20,10 @@
         </div>
     </div>
 </div>
+<script>
+    window.duoshuoQuery = {short_name: "{{config.duoshuo_shortname}}"};
+    window.baidutj = '{{ config.baidutj }}';
+</script>
 <script src="/js/build/index_entry.min.js"></script>
 {% block script%}{% endblock %}
 </body>

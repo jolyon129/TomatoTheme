@@ -9,7 +9,6 @@ var minifyCss = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
 var browserify = require('gulp-browserify');
 var rename = require('gulp-rename');
-var babel = require('gulp-babel');
 
 console.log('--------------------');
 var IS_DEBUG = !!args.debug;

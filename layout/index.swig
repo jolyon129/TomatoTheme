@@ -26,6 +26,7 @@
                     {% for cat in post.categories %}
                     <span><a href="/categories/{{cat.name}}/#_tabnav">{{cat.name}} |</a></span>
                     {% endfor %}
+                    <span class="ds-thread-count" data-thread-key="{{ post.path }}"></span>
                 </div>
             </div>
         </li>
