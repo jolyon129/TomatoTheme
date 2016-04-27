@@ -15,7 +15,7 @@ Toc.prototype = {
         //记录值
         self.getHeaderlink();
         //pause
-        console.log(self.linkOffsetY);
+        //console.log(self.linkOffsetY);
         self.tocTrack();
     },
     tocTrack: function() {
@@ -28,10 +28,10 @@ Toc.prototype = {
             }
             currentPageY = window.scrollY;
             timer = setTimeout(function(){
-                console.log('scrolling ends..');
+                //console.log('scrolling ends..');
                 order = self.search(self.linkOffsetY, currentPageY);
-                console.log("当前位置:" + currentPageY);
-                console.log("当前顺序:" + order);
+                //console.log("当前位置:" + currentPageY);
+                //console.log("当前顺序:" + order);
                 if($('a.scroll.nav-link.on').length !== 0){
                     $('a.scroll.nav-link.on').removeClass('on');
                 }
@@ -48,6 +48,7 @@ Toc.prototype = {
             self.linkOffsetY[temp] = $(links[temp]).offset().top+self.offset;
         }
     },
+
     search: function(srcArray, des) {
         var length = srcArray.length;
         var order = 0;

@@ -68,6 +68,10 @@ gulp.task('uglify',function () {
 
 gulp.task('build',function () {
     gulp.src('./source/js/build/*.js')
-        .pipe(uglify())
+        .pipe(uglify({
+            compress: {
+                drop_console: false
+            }
+        }))
         .pipe(gulp.dest('./source/js/build/'));
 });

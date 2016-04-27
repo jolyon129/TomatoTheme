@@ -3,9 +3,13 @@
 window.zepto=window.$ = require('zepto');
 var hljs = require ('highlight');
 var ScrollIt = require('./lib/scrollit.js');
+var Console = require('./lib/console.js');
 require('../../lib/velocity.min.js');
 
 $(document).ready( function(){
+    var console = new Console();
+    console.init();
+
     $('.scroll.btn').hide();
     var scrollIt = new ScrollIt('.mb-headb');
     scrollIt.init();
