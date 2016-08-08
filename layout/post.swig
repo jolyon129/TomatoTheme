@@ -53,8 +53,5 @@
     window.baidutj = '{{config.baidutj}}';
 </script>
 <script src="{{ url_for('/js/build/post_entry.min.js') }}"></script>
-<script>
-
-</script>
 </body>
 </html>

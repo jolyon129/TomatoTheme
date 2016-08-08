@@ -4,13 +4,17 @@ window.zepto = window.$ = require('zepto');
 var hljs = require('highlight');
 var ScrollIt = require('./lib/scrollit.js');
 var Toc = require('./lib/toc.js');
+var Console =require('./lib/console.js');
 require('../../lib/velocity.min.js');
 
 $(document).ready(function () {
+    var console = new Console();
+    console.init();
     var scrollIt = new ScrollIt(['.header', '.mb-headbar']);
     var toc = new Toc();
     // 加载多说
     (function () {
+
         var ds = document.createElement('script');
         ds.type = 'text/javascript';
         ds.async = true;

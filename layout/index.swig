@@ -43,9 +43,7 @@
     </nav>
     {% endif %}
 </div>
-
 {% endblock %}
-
 
 {% block script %}
 {% endblock %}
